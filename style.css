@@ -1,0 +1,165 @@
+/* Ensure the html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex container for the main content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for header */
+header {
+    background: linear-gradient(to right, #00a6a6, #0070b8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Styles for navigation */
+nav {
+    background: linear-gradient(to right, #00a6a6, #0070b8);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #00a6a6, #0070b8);
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #005f5f;
+}
+
+/* Styles for container */
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.library {
+    text-align: center;
+}
+
+.library h2 {
+    color: #333;
+}
+
+.library p {
+    color: #666;
+}
+
+/* Styles for card */
+.pos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #0070b8;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid #00a6a6;
+}
+
+.card-image {
+    width: 250px;
+    margin: 0 auto 10px;
+}
+
+.card-image img {
+    width: 250px;
+    height: 150px;
+}
+
+.card-details {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.book-details {
+    color: #777;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #00a6a6;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    color: #0070b8;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #0070b8;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
